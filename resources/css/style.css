@@ -4,8 +4,16 @@
   display: none;
 }
 
+.desktop {
+  display: none;
+}
+
 @media only screen and (min-width: 400px) {
   .sidebar {
+    display: block;
+  }
+
+  .desktop {
     display: block;
   }
 
@@ -84,6 +92,10 @@ header {
 
 /* Info Styles */
 
+#info {
+  display: flex;
+
+}
 
 
 /* Course Styles */
