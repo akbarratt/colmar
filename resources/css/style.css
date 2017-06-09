@@ -23,7 +23,49 @@ h4 {
 
 
 /* Header Styles */
+
+header {
+
+}
+
 /* Banner Styles */
+
+#banner {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner.img {
+  height: 180px;
+  overflow: hidden;
+}
+
+.banner img {
+  height: auto;
+  width: 100%;
+}
+
+@media only screen and (min-width: 400px) {
+  #banner {
+    flex-direction: row;
+
+  }
+
+  .banner.img {
+  height: auto;
+  width: 60%;
+  padding: 32px 24px;
+  }
+
+  .banner.main {
+    padding-left: 16px;
+  }
+
+}
+
 /* Info Styles */
 /* Course Styles */
 /* Video Styles */
