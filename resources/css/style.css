@@ -48,6 +48,16 @@ header {
   width: 100%;
 }
 
+.button {
+  text-align: center;
+  background-color: darkgray;
+  color: white;
+  width: 75%;
+  padding: 8px 0;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
 @media only screen and (min-width: 400px) {
   #banner {
     flex-direction: row;
@@ -62,6 +72,11 @@ header {
 
   .banner.main {
     padding-left: 16px;
+  }
+
+  .button {
+    margin-top: 24px;
+
   }
 
 }
