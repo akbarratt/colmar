@@ -1,18 +1,12 @@
 /* Universal Styles */
 
-.sidebar {
-  display: none;
-}
-
+.sidebar,
 .desktop {
   display: none;
 }
 
-@media only screen and (min-width: 400px) {
-  .sidebar {
-    display: block;
-  }
-
+@media only screen and (min-width: 650px) {
+  .sidebar,
   .desktop {
     display: block;
   }
@@ -29,6 +23,11 @@ h4 {
   font-family: 'Ledger', serif;
 }
 
+
+ img {
+  height: auto;
+  width: 100%;
+}
 
 /* Header Styles */
 
@@ -52,10 +51,7 @@ header {
   overflow: hidden;
 }
 
-.banner img {
-  height: auto;
-  width: 100%;
-}
+
 
 .banner.main {
   padding: 32px 16px;
@@ -93,9 +89,36 @@ header {
 /* Info Styles */
 
 #info {
+  width: 100%;
   display: flex;
 
 }
+
+.info.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.box.img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 650px) {
+  .info.main {
+    width: 423px;
+  }
+
+  .box.img {
+    width: 35%;
+  }
+
+  .info.box {
+    flex-direction: row;
+  }
+}
+
+
 
 
 /* Course Styles */
