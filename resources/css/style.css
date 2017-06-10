@@ -97,6 +97,8 @@ header {
 .info.box {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .box.img {
@@ -111,6 +113,7 @@ header {
 
   .box.img {
     width: 35%;
+    height: 100%;
   }
 
   .info.box {
