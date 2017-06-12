@@ -207,7 +207,92 @@ header {
 
 /* Video Styles */
 
+#video {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  background-color: gray;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
 
+#video h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.info.main {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  box-sizing: border-box;
+}
+
+.info.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 16px;
+
+}
+
+.box.img {
+  flex-grow: 1;
+}
+
+.box.content {
+  background-color: lightgreen;
+  width: 100%;
+  height: 50%;
+  flex-grow: 2;
+}
+
+
+
+@media only screen and (min-width: 650px) {
+  #info {
+    padding: 32px 24px;
+  }
+
+  .info.box {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .video.sidebar {
+    height: inherit;
+    width: 423px;
+    justify-content: space-around;
+    align-items: center;
+    border-left: solid 1px black;
+  }
+
+  .video.main {
+    /*height: 100%;*/
+    flex: 1 1 60%;
+    background-color: pink;
+    padding-right: 24px;
+    width: 60%;
+  }
+
+  .video.main video {
+    height: auto;
+    width: 100%;
+  }
+
+  .box.img {
+    width: 35%;
+    height: 100%;
+    padding: 16px;
+  }
+
+  .box.content {
+    width: 65%;
+  }
+}
 
 
 /* Footer Styles */
