@@ -17,11 +17,36 @@
   }
 }
 
-h1,
 h2,
 h3,
 h4 {
   font-family: 'Ledger', serif;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  font-family: 'Ledger', serif;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 16px;
 }
 
 img {
@@ -54,9 +79,11 @@ header {
 
 .logo {
   display: flex;
-  text-align: center;
+  align-items: center;
   justify-content: center;
 }
+
+
 
 /* Banner Styles */
 /* Figure out responsive padding */
@@ -134,9 +161,10 @@ header {
 .info.box {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   padding: 16px 16px;
+  height: 100%;
 }
 
 .box.content {
@@ -151,7 +179,6 @@ header {
 
   .info.box {
     flex-direction: row;
-    align-items: center;
   }
 
   .info.main {
@@ -177,6 +204,7 @@ header {
 
   .box.content {
     width: 65%;
+    height: 100%;
   }
 }
 
