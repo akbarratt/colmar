@@ -237,22 +237,15 @@ header {
 
 }
 
-.box.img {
-  flex-grow: 1;
-}
-
-.box.content {
-  background-color: lightgreen;
-  width: 100%;
-  height: 50%;
-  flex-grow: 2;
-}
-
-
+/* Breakpoint needs to be @ 850px */
 
 @media only screen and (min-width: 650px) {
   #video {
     padding: 32px 24px;
+  }
+
+  #video h2 {
+    margin-bottom: 32px;
   }
 
   .video.info.box {
@@ -272,7 +265,7 @@ header {
     flex: 1 1 60%;
     background-color: pink;
     padding-right: 24px;
-    width: 60%;
+    max-width: 50%
   }
 
   .video.box.img {
