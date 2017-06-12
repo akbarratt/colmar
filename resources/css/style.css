@@ -34,7 +34,7 @@ img {
 /* Header Styles */
 
 header {
-
+  position: fixed;
 }
 
 /* Banner Styles */
@@ -47,6 +47,9 @@ header {
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
+  /* offset fixed header */
+  position: relative;
+  top: 64px;
 }
 
 .banner.img {
@@ -194,8 +197,6 @@ header {
     box-sizing: border-box;
     padding: 16px 16px 24px 16px;
   }
-
-
 }
 
 /* Video Styles */
@@ -207,7 +208,7 @@ header {
   justify-content: center;
   align-items: flex-start;
   background-color: gray;
-  border-bottom: 1px solid black;
+  padding: 32px 0;
   box-sizing: border-box;
 }
 
@@ -281,3 +282,25 @@ header {
 
 
 /* Footer Styles */
+
+footer {
+
+}
+
+footer p {
+  padding: 16px 16px;
+  float: left;
+}
+
+
+@media only screen and (min-width: 650px) {
+  footer {
+    border-top: solid black 1px;
+    padding-right: 24px;
+  }
+
+  .terms {
+    padding: 16px 16px;
+    float: right;
+  }
+}
