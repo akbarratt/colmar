@@ -94,7 +94,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   background-color: gray;
   border-bottom: 1px solid black;
   box-sizing: border-box;
@@ -134,14 +134,14 @@ header {
 
   .info.box {
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
   }
 
   .info.main {
-    height: 100%;
-    flex: 1 1 432px;
-    justify-content: space-between;
-    align-items: space-between;
+    height: inherit;
+    width: 423px;
+    justify-content: space-around;
+    align-items: center;
     border-left: solid 1px black;
   }
 
