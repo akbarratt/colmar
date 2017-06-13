@@ -5,6 +5,62 @@
   display: none;
 }
 
+h2, h3, h4 {
+ margin-top: 0;
+}
+
+h1 {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 1.5rem;
+ font-weight: normal;
+}
+
+h2 {
+ font-family: 'Ledger', serif;
+ font-size: 2.2rem;
+ margin-bottom: 2rem;
+}
+
+h3 {
+ font-family: 'Ledger', serif;
+ font-size: 1.3rem;
+ margin-bottom: 2rem;
+}
+
+h4 {
+ font-family: 'Open Sans', sans-serif;
+ font-weight: normal;
+ font-size: 1.2rem;
+}
+
+p {
+ font-family: 'Open Sans', sans-serif;
+}
+
+a {
+ font-family: 'Open Sans', sans-serif;
+ text-decoration: none;
+ color: inherit;
+}
+
+header a,
+footer a {
+ font-family: 'Ledger', serif;
+ margin-left: 16px;
+}
+
+img {
+height: auto;
+width: 100%;
+display: block;
+}
+
+.icon {
+ height: 35px;
+ width: 35px;
+}
+
+
 
 @media only screen and (min-width: 650px) {
   .sidebar,
@@ -18,60 +74,27 @@
 }
 
 
- h2, h3, h4 {
-  margin-top: 0;
-}
-
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.5rem;
-  font-weight: normal;
-}
-
 h2 {
-  font-family: 'Ledger', serif;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
+ font-size: 1.5rem;
 }
 
 h3 {
-  font-family: 'Ledger', serif;
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
+ font-family: 'Ledger', serif;
+ font-size: 1.2rem;
+ margin-bottom: 2rem;
 }
 
 h4 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: normal;
-  font-size: 1.2rem;
+ font-family: 'Open Sans', sans-serif;
+ font-weight: normal;
+ font-size: 1rem;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  /*font-size: ;*/
 }
 
-a {
-  font-family: 'Open Sans', sans-serif;
-  text-decoration: none;
-  color: inherit;
-}
 
-header a,
-footer a {
-  font-family: 'Ledger', serif;
-  margin-left: 16px;
-}
-
-img {
- height: auto;
- width: 100%;
- display: block;
-}
-
-.icon {
-  height: 35px;
-  width: 35px;
-}
 
 /* Header Styles */
 
@@ -185,6 +208,10 @@ header {
   height: 100%;
 }
 
+.box.img {
+  width: 100%;
+}
+
 .box.content {
   background-color: lightgreen;
   width: 100%;
@@ -243,6 +270,12 @@ header {
   width: 100%;
   text-align: center;
   margin-bottom: 32px;
+}
+
+hgroup h3 {
+  background-color: gray;
+  padding: 16px 16px;
+  margin-bottom: 8px;
 }
 
 
@@ -360,12 +393,14 @@ header {
 /* Footer Styles */
 
 footer {
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 footer p {
   padding: 16px 16px;
-  float: left;
+  font-size: 0.8rem;
 }
 
 
@@ -375,8 +410,4 @@ footer p {
     padding-right: 24px;
   }
 
-  .terms {
-    padding: 16px 16px;
-    float: right;
-  }
 }
