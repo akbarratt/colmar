@@ -107,7 +107,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: white;
+  background-color: rgb(255,152,0);
   box-sizing: border-box;
   padding: 0 24px;
   z-index: 5;
@@ -122,7 +122,7 @@ header {
 /* Banner Styles */
 
 #banner {
-  background-color: lightgray;
+  background-color: rgb(255,255,255);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +186,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  background-color: gray;
+  background-color: rgb(126,138,162);
   border-bottom: 1px solid black;
   box-sizing: border-box;
 }
@@ -194,7 +194,6 @@ header {
 .info.main {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
   box-sizing: border-box;
 }
 
@@ -208,15 +207,19 @@ header {
   height: 100%;
 }
 
+.info.box:hover {
+  background-color: white;
+}
+
 .box.img {
   width: 100%;
 }
 
 .box.content {
-  background-color: lightgreen;
   width: 100%;
   padding: 16px 16px;
 }
+
 
 @media only screen and (min-width: 650px) {
   #info {
@@ -239,7 +242,6 @@ header {
   .info.sidebar {
     /*height: 100%;*/
     flex: 1 1 60%;
-    background-color: pink;
     padding: 32px 24px;
   }
 
@@ -251,7 +253,6 @@ header {
     width: 35%;
     /*height: 100%;*/
     padding: 16px;
-    background-color: lightblue;
   }
 
   .box.content {
@@ -311,11 +312,11 @@ hgroup h3 {
 
 #video {
   width: 100%;
+  background-color: rgb(89,121,168);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  background-color: gray;
   padding: 32px 0;
   box-sizing: border-box;
 }
@@ -328,7 +329,6 @@ hgroup h3 {
 .video.main {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
   box-sizing: border-box;
 }
 
@@ -375,7 +375,6 @@ hgroup h3 {
 
   .video.main {
     flex: 1 1 60%;
-    background-color: pink;
     padding-right: 24px;
     max-width: 50%
   }
