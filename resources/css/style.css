@@ -49,6 +49,11 @@ footer a {
  margin-left: 16px;
 }
 
+a:hover {
+  color: rgb(255,255,255);
+  transition: color 0.5s ease-in-out 250ms;
+}
+
 img {
 height: auto;
 width: 100%;
@@ -293,11 +298,15 @@ header {
 }
 
 hgroup h3 {
-  background-color: gray;
+  background-color: rgba(89,121,168,0.25);
   padding: 16px 16px;
   margin-bottom: 8px;
 }
 
+hgroup h3:hover {
+  background-color: rgba(89,121,168, 0.75);
+  transition: background-color 0.5s ease-in;
+}
 
 @media only screen and (min-width: 650px) {
 
